@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("/img/space.gif");
+  height: 100vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-repeat: repeat;
+}
+.container {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+}
+.block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 0.5px solid rgba(255, 255, 255, 0.273);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.block.sun {
+  border: none;
+}
+
+.block.neptune {
+  width: 680px;
+  height: 680px;
+  animation: spin 356s linear infinite;
+}
+.block.uranus {
+  width: 590px;
+  height: 590px;
+  animation: spin 700s linear infinite;
+}
+.block.saturn {
+  width: 480px;
+  height: 480px;
+  animation: spin 295s linear infinite;
+}
+.block.jupiter {
+  width: 370px;
+  height: 370px;
+  animation: spin 119s linear infinite;
+}
+.block.mars {
+  width: 290px;
+  height: 290px;
+  animation: spin 18.9s linear infinite;
+}
+.block.earth {
+  width: 230px;
+  height: 230px;
+  animation: spin 10s linear infinite;
+}
+.block.venus {
+  width: 170px;
+  height: 170px;
+  animation: spin 6.25s linear infinite;
+}
+.block.mercury {
+  animation: spin 5s linear infinite;
+  width: 120px;
+  height: 120px;
+}
+.block.sun {
+  width: 90px;
+  height: 90px;
+  animation: spin 10s linear infinite;
+}
+.planet {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  
+}
+.planet.mercury {
+  width: 20px;
+  height: 20px;
+}
+.planet.jupiter {
+  width: 43px;
+  height: 43px;
+}
+.planet.saturn {
+  width: 60px;
+  height: 50px;
+}
+.planet.uranus {
+  width: 30px;
+  height: 30px;
+}
+.planet.neptune {
+  width: 30px;
+  height: 30px;
+}
+.planet img {
+  width: 100%;
+  height: 100%;
+  filter: saturate(400%);
+}
+
+.block.sun img {
+  height: 100%;
+  width: 100%;
+  filter: saturate(400%);
+  
+}
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+
+  }
+  100% {
+
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
